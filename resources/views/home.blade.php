@@ -14,7 +14,8 @@
                             </div>
                         @endif
 
-                        {{ __('You are logged in as user!') }}
+                        @component('components.who')
+                        @endcomponent
                     </div>
                 </div>
             </div>

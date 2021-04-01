@@ -14,7 +14,10 @@
                             </div>
                         @endif
 
-                        {{ __('You are logged in as admin!') }}
+                        @component('components.who')
+                        @endcomponent
+                        <br>
+                        {{ Auth::user() }}
                     </div>
                 </div>
             </div>
